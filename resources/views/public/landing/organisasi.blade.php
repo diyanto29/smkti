@@ -227,18 +227,22 @@
 
 @section('content')
 
-{{-- Header --}}
-<section style="background: linear-gradient(135deg, rgba(15,60,92,0.95) 0%, rgba(24,90,138,0.9) 100%); padding:120px 0 80px; position:relative; overflow:hidden;">
-  <div class="container text-center text-white position-relative" style="z-index: 2;">
-    <h6 class="text-warning fw-bold text-uppercase tracking-wider mb-2" data-aos="fade-down">Profil Sekolah</h6>
-    <h1 class="fw-bold mb-3" style="font-size: clamp(2rem, 4vw, 3rem); font-family: 'Poppins', sans-serif;" data-aos="fade-up">Struktur Organisasi</h1>
-    <p class="mb-0 mx-auto" style="opacity: 0.9; max-width: 600px; font-size: 1.1rem;" data-aos="fade-up" data-aos-delay="100">
-      Susunan kepengurusan dan tata kelola {{ setting('sekolah_nama','SMK') }}
+{{-- 3D Subpage Header --}}
+<div class="subpage-hero-3d">
+  <div class="subpage-hero-glow subpage-hero-glow-1" aria-hidden="true"></div>
+  <div class="subpage-hero-glow subpage-hero-glow-2" aria-hidden="true"></div>
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="subpage-breadcrumb-pill">
+      <a href="{{ route('landing.index') }}"><i class="fas fa-home me-1"></i> Beranda</a>
+      <i class="fas fa-chevron-right small opacity-50"></i>
+      <span>Struktur Organisasi</span>
+    </div>
+    <h1 class="subpage-title-3d">Struktur Organisasi Sekolah</h1>
+    <p class="subpage-desc-3d">
+      Susunan kepengurusan, pimpinan, dan tata kelola kelembagaan {{ setting('sekolah_nama','SMK') }}.
     </p>
   </div>
-  <!-- Decorative background elements -->
-  <i class="fas fa-sitemap position-absolute" style="font-size: 20rem; color: rgba(255,255,255,0.05); right: -50px; bottom: -50px; z-index: 1;"></i>
-</section>
+</div>
 
 <section class="py-5" style="background:var(--bg-light); min-height: 50vh;">
   <div class="container-fluid px-3 px-lg-5">

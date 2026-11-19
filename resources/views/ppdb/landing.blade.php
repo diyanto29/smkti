@@ -142,7 +142,7 @@
       </div>
 
       <div class="col-lg-5 offset-lg-1">
-        <div class="status-card reveal" style="--d:.1s">
+        <div class="status-card card-3d reveal" style="--d:.1s">
           @if($gelombangAktif)
             <div class="head">
               <h2>Pendaftaran ditutup dalam</h2>
@@ -191,21 +191,21 @@
 <div class="container quick">
   <div class="row g-3">
     <div class="col-md-4 reveal">
-      <a href="{{ route('ppdb.index') }}">
+      <a href="{{ route('ppdb.index') }}" class="card-3d">
         <span class="ic" style="background:var(--accent-soft);color:var(--accent-dark)"><i class="fas fa-file-pen"></i></span>
         <span><strong>Formulir pendaftaran</strong><span>Isi data diri &amp; pilihan jurusan</span></span>
         <i class="fas fa-arrow-right go"></i>
       </a>
     </div>
     <div class="col-md-4 reveal" style="--d:.05s">
-      <a href="{{ route('ppdb.cek') }}">
+      <a href="{{ route('ppdb.cek') }}" class="card-3d">
         <span class="ic" style="background:var(--primary-soft);color:var(--primary)"><i class="fas fa-magnifying-glass"></i></span>
         <span><strong>Cek status</strong><span>Dengan nomor pendaftaran atau NISN</span></span>
         <i class="fas fa-arrow-right go"></i>
       </a>
     </div>
     <div class="col-md-4 reveal" style="--d:.1s">
-      <a href="{{ route('ppdb.syarat') }}">
+      <a href="{{ route('ppdb.syarat') }}" class="card-3d">
         <span class="ic" style="background:#dcfce7;color:#166534"><i class="fas fa-list-check"></i></span>
         <span><strong>Persyaratan</strong><span>Dokumen yang perlu disiapkan</span></span>
         <i class="fas fa-arrow-right go"></i>

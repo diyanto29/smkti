@@ -32,13 +32,13 @@ Ringkasan di bawah; daftar lengkap per peran ada di [feature.md](feature.md).
 
 ## Teknologi
 
-- **Backend**: Laravel 12, PHP 8.4
+- **Backend**: Laravel 12, PHP 8.4 / 8.5
 - **Frontend**: Blade + Bootstrap/AdminLTE; modul Ujian memakai Inertia + Vue 3 (Vite)
 - **Database**: MySQL/MariaDB (produksi) atau SQLite (coba cepat & test)
 
 ## Persyaratan
 
-- PHP **8.4** atau lebih baru, dengan ekstensi: bcmath, ctype, fileinfo, gd, intl, mbstring, openssl, pdo (mysql/sqlite), tokenizer, xml, zip
+- PHP **8.4 / 8.5** atau lebih baru, dengan ekstensi: bcmath, ctype, fileinfo, gd, intl, mbstring, openssl, pdo (mysql/sqlite), tokenizer, xml, zip
 - Composer 2
 - Node.js 20+ dan npm
 - MySQL 8 / MariaDB 10.6+ (atau SQLite)

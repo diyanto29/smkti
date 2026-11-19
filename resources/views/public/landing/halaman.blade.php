@@ -4,24 +4,29 @@
 @section('meta_desc', $halaman->meta_desc ?? '')
 
 @section('content')
-<div style="background:linear-gradient(135deg,var(--primary),var(--primary-light));padding:120px 0 60px">
-  <div class="container text-white">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb" style="background:none;padding:0;margin-bottom:.5rem">
-        <li class="breadcrumb-item"><a href="{{ route('landing.index') }}" style="color:rgba(255,255,255,.7)">Beranda</a></li>
-        <li class="breadcrumb-item active text-white">{{ $halaman->judul }}</li>
-      </ol>
-    </nav>
-    <h1 class="fw-bold mb-0">{{ $halaman->judul }}</h1>
+{{-- 3D Subpage Header --}}
+<div class="subpage-hero-3d">
+  <div class="subpage-hero-glow subpage-hero-glow-1" aria-hidden="true"></div>
+  <div class="subpage-hero-glow subpage-hero-glow-2" aria-hidden="true"></div>
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="subpage-breadcrumb-pill">
+      <a href="{{ route('landing.index') }}"><i class="fas fa-home me-1"></i> Beranda</a>
+      <i class="fas fa-chevron-right small opacity-50"></i>
+      <span>{{ $halaman->judul }}</span>
+    </div>
+    <h1 class="subpage-title-3d">{{ $halaman->judul }}</h1>
   </div>
 </div>
 
-<section class="py-5">
-  <div class="container">
+<section class="py-5" style="background: var(--bg-light); min-height: 60vh;">
+  <div class="container py-3">
     <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <div class="card border-0 shadow-sm rounded-3 p-5">
-          <div class="lh-lg" style="color:var(--text)">{!! $halaman->konten !!}</div>
+      <div class="col-lg-10">
+        <div class="card-3d p-4 p-md-5">
+          <div class="card-3d-glare"></div>
+          <div class="lh-lg text-dark article-content" style="font-size: 1.05rem;">
+            {!! $halaman->konten !!}
+          </div>
         </div>
       </div>
     </div>
